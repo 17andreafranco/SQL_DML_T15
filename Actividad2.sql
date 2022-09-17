@@ -1,4 +1,6 @@
+drop database Actividad2T15;
 create database Actividad2T15;
+
 use Actividad2T15;
 
 create table piezas(
@@ -25,8 +27,6 @@ create table suministra(
     foreign key(idproveedor)
     references proveedores(id)
 );
-
-drop table suministra;
 
 INSERT INTO piezas VALUE 
 	(1,'Pieza1'),
@@ -63,8 +63,3 @@ INSERT INTO suministra VALUE
     (4,'000H',20),
     (5,'000I',50),
     (5,'000J',20);
-    
-    show full tables from actividad2T15;
-    select * from suministra;
-    select * from proveedores;
-    select * from piezas;

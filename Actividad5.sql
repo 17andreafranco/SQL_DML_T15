@@ -1,4 +1,6 @@
+drop database Actividad5T15;
 create database Actividad5T15;
+
 use Actividad5T15;
 
 create table facultad(
